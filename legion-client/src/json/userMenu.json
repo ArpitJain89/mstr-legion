@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Switch Account",
+    "icon": "icon-descending"
+  },
+  {
+    "name": "Templates",
+    "icon": "icon-book"
+  },
+  {
+    "name": "Enter Architect Mode",
+    "icon": "icon-equalizer"
+  },
+  {
+    "name": "Audit Trail Reports",
+    "icon": "icon-file"
+  },
+  {
+    "name": "My Profile",
+    "icon": "icon-user"
+  },
+  {
+    "name": "Sign out",
+    "icon": "icon-exit"
+  }
+]

@@ -1,0 +1,101 @@
+.top-nav {
+    display: flex;
+    margin-bottom: 6rem;
+    color: #8a929e;
+    font-weight: 600;
+    height: 3.5rem;
+    position: fixed;
+    top: 0rem;
+    z-index: 5;
+    -webkit-box-shadow: 0px 1px 8px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 1px 8px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 1px 8px 0px rgba(50, 50, 50, 0.2);
+    
+    &.is-admin {
+      width:100%;
+    }
+  
+    &:not(.is-admin) {
+      width: 100%;
+    }
+  
+    .top-nav-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .header-logo{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+  
+        .LSAC-logo{
+          display: flex;
+          padding-left: 15px;
+          margin-left: 5px;
+          border-left: 1px solid #ccc;
+          width: 116px;
+          color: #ccc;
+        }
+  
+        img{
+          width: 125px;
+          height: 38px;
+        }
+      }
+    }
+  
+    .top-nav-item {
+      white-space: nowrap;
+      padding-right: 0.3rem;
+      
+      &.notification-dropdown{
+        padding-right: 0.5rem;
+      }
+    }
+  
+    .top-nav-left-items {
+      display: flex;
+      flex-shrink: 100;
+      width: 40%;
+      margin-left: 500px;
+
+      &.minimized{
+        overflow: hidden;
+      }
+    }
+  
+    .session-filter{
+      width: 100%;
+    }
+  
+    .top-nav-right-items {
+      display: flex;
+      height: 2.1rem;
+      margin-left: auto;
+      justify-content: flex-end;
+    }
+  
+    .simple-dropdown {
+  
+      &:hover:not(&.disabled) {
+        color: #ccc;
+      }
+  
+      &.disabled {
+        color: #ccc;
+      }
+  
+      .simple-dropdown-contents {
+        color: #333;
+      }
+    }
+  
+    .LSAC-logo{
+      display: inline-block;
+      padding-left: 10px;
+      margin-left: 10px;
+    }
+  }
+  

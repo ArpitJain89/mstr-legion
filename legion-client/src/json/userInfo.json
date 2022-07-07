@@ -1,0 +1,104 @@
+{
+  "email": "testuser+cqs@xoroto.com",
+  "username": "test cqs Xoroto",
+  "firstname": "test cqs",
+  "lastname": "Xoroto",
+  "status": "ACTIVE",
+  "accountname": "ccdm",
+  "apps": [
+    {
+      "name": "Oversight Scorecard",
+      "url": "http://myriad.local:9000/oversight-scorecard",
+      "attributes": {
+        "grouping": "RBQM",
+        "app-type": "module",
+        "module-parent": "lsac-darkroom",
+        "rank": "3",
+        "subRank": "2",
+        "ACCOUNT_DEFAULT_APP": "true",
+        "showInKa": "true",
+        "client-id": "lsac-darkroom-oversight-scorecard",
+        "category": "my_apps"
+      }
+    },
+    {
+      "name": "RACT",
+      "url": "http://myriad.local:9000/ract",
+      "attributes": {
+        "grouping": "RBQM",
+        "app-type": "module",
+        "module-parent": "lsac-darkroom",
+        "rank": "3",
+        "subRank": "1",
+        "ACCOUNT_DEFAULT_APP": "true",
+        "showInKa": "true",
+        "client-id": "lsac-darkroom-ract",
+        "category": "my_apps"
+      }
+    },
+    {
+      "name": "Clinical Insights",
+      "url": "http://myriad.local:9000/clinical-insights",
+      "attributes": {
+        "ACCOUNT_DEFAULT_APP": "true",
+        "app-type": "module",
+        "showInKa": "true",
+        "rank": "2",
+        "client-id": "lsac-darkroom-clinical-insights",
+        "module-parent": "lsac-darkroom",
+        "category": "my_apps"
+      }
+    },
+    {
+      "name": "KPI Studio",
+      "url": "http://myriad.local:9000/embedded/kpi-studio",
+      "attributes": {
+        "ACCOUNT_DEFAULT_APP": "true",
+        "app-type": "module",
+        "showInKa": "true",
+        "rank": "4",
+        "client-id": "lsac-darkroom-kpi-studio",
+        "module-parent": "lsac-darkroom",
+        "category": "my_apps"
+      }
+    },
+    {
+      "name": "Operations Insights",
+      "url": "http://myriad.local:9000/operations-insights",
+      "attributes": {
+        "ACCOUNT_DEFAULT_APP": "true",
+        "app-type": "module",
+        "showInKa": "true",
+        "rank": "1",
+        "client-id": "lsac-darkroom-operations-insights",
+        "module-parent": "lsac-darkroom",
+        "category": "my_apps"
+      }
+    },
+    {
+      "name": "User Management",
+      "url": "http://ka.local:9009",
+      "attributes": {
+        "category": "management",
+        "client-id": "lsac-user-management-console",
+        "ACCOUNT_DEFAULT_APP": "true"
+      }
+    },
+    {
+      "name": "Analytics (myriad.local)",
+      "url": "http://myriad.local:9000",
+      "attributes": {
+        "category": "my_home",
+        "ACCOUNT_DEFAULT_APP": "true",
+        "client-id": "lsac-darkroom"
+      }
+    },
+    {
+      "name": "Task",
+      "url": "http://myriad.local:9000/tasks",
+      "attributes": {
+        "client-id": "lsac-darkroom-task"
+      }
+    }
+  ]
+}

@@ -2,11 +2,22 @@ import React, { Component } from 'react';
 import Keycloak from 'keycloak-js';
 import Lsacsupernavbar from '@saama/lsac-supernavbar'
 import StudiesAPI from '../gpl-services/StudiesAPI';
+import SimpleDropdown from '../component/SimpleDropdown';
+import UserMenu from '../component/UserMenu';
 import './homePage.css';
+import immUserInfo from '../json/userInfo.json';
+import immUserMenuItems from '../json/userMenu.json';
+import Imm from 'immutable';
+import '../stylesheet/top-nav.scss';
+import '../stylesheet/user-menu.scss';
+import 'primeicons/primeicons.css';
+import '../stylesheet/_imported-font-icons.scss';
 
 const applicationTitle = "Microstrategy"
 const appContext = "home"
-const appDomainOrigin = ""
+const appDomainOrigin = "";
+const version = "";
+
 class HomePage extends Component {
 
 	constructor(props) {
@@ -39,17 +50,41 @@ class HomePage extends Component {
 							appContext={appContext}
 							domain={appDomainOrigin}
 							runMode='development' />
-
-
 					</div>
-					<div className="msfContainer">
-						<h3>Studies</h3>
-						<div className='msf'>
-							<StudiesAPI/>
+					<div className='top-nav'>
+						<div className='top-nav-row'>
+							<div className='top-nav-left-items'>
+								<div className="msfContainer">
+									<h3>Studies</h3>
+									<div className='msf'>
+										<StudiesAPI/>
+									</div>
+									
+								</div>
+							</div>
+							<div className='top-nav-right-items'>
+								<div id='top-nav-customer-menu' className='top-nav-item'>
+									<SimpleDropdown 
+										opener={null}
+										items={[]}
+										itemListHeader={[]}
+										//onChange={this.handleChange.bind(this)}
+										selectedIndex={0}
+										disableChevron={true}
+										isDisabled={true}
+										selectedOverride={'CCDM'}
+									/>
+								</div>
+								<div className='top-nav-item'>
+									<UserMenu immUserInfo={ Imm.Map(immUserInfo)} 
+									version={""} 
+									userMenuItems={immUserMenuItems}
+									/>
+								</div>
+							</div>
 						</div>
-						
 					</div>
-					</div>
+				</div>
 			); else return (<div>Unable to authenticate!</div>)
 		}
 		return (
