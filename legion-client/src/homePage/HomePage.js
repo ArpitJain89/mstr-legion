@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Keycloak from 'keycloak-js';
 import Lsacsupernavbar from '@saama/lsac-supernavbar'
 import StudiesAPI from '../gpl-services/StudiesAPI';
+import './homePage.css';
 
 const applicationTitle = "Microstrategy"
 const appContext = "home"
@@ -41,7 +42,13 @@ class HomePage extends Component {
 
 
 					</div>
-						<StudiesAPI/>
+					<div className="msfContainer">
+						<h3>Studies</h3>
+						<div className='msf'>
+							<StudiesAPI/>
+						</div>
+						
+					</div>
 					</div>
 			); else return (<div>Unable to authenticate!</div>)
 		}

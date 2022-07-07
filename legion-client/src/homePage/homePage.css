@@ -1,0 +1,23 @@
+.msfContainer{
+    width: 400px;
+    position: relative;
+    left: 500px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: "proxima-nova", "Helvetica Neue" !important;
+}
+.msfContainer h3{
+    margin-right: 20px;
+}
+.msfContainer .msf{
+    width: 300px;
+}
+
+.disabled {
+    color: #CCC;
+}
